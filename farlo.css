@@ -58,7 +58,11 @@
 .kf-foto-kotak{display:flex;justify-content:center;padding:18px}
 .kf-foto-sedang{width:150px;height:150px}
 .kf-teks{padding:14px 24px 18px}
-.kf-paragraf{margin:0 0 12px;font-size:19px;line-height:1.5}
+.kf-paragraf{margin:0 0 12px;font-size:18px;line-height:1.5}
+.kf-bawah{display:grid;grid-template-columns:1fr 1fr;gap:26px;align-items:stretch}
+.kf-lebar,.kf-penuh{grid-column:1 / -1}
+.kf-lebar .kf-teks{column-count:2;column-gap:36px}
+.kf-lebar .kf-paragraf{break-inside:avoid}
 .kf-paragraf:last-child{margin-bottom:0}
 .kf-tebal{font-weight:700}
 .kf-kartu{scroll-margin-top:16px}
@@ -67,6 +71,8 @@
 .kf-sidebar{border-right:0;border-bottom:2px solid #22304a}
 .kf-menu{flex-direction:row;flex-wrap:wrap}
 .kf-kolom{grid-template-columns:1fr}
+.kf-bawah{grid-template-columns:1fr}
+.kf-lebar .kf-teks{column-count:1}
 }
 @media (max-width:560px){
 .kf-profil{flex-direction:column;padding-top:70px;text-align:center}
